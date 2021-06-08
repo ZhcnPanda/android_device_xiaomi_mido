@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-exthmui
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-exthm
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -277,7 +277,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.xiaomi_mido
+    vendor.exthm.livedisplay@2.0-service.xiaomi_mido
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -388,11 +388,11 @@ PRODUCT_PACKAGES += \
 
 # Touch features
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_mido
+    vendor..touch@1.0-service.xiaomi_mido
 
 # Trust HAL
 PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
+    vendor.exthm.trust@1.0-service
 
 # USB HAL
 PRODUCT_PACKAGES += \
